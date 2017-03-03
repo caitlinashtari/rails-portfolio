@@ -17,12 +17,9 @@
               <% if user_signed_in? %>
                 <li><%= link_to 'Edit Profile', edit_user_registration_path %></li>
                 <li><%= link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-              <% if current_user.admin %>
-                <li><%= link_to "Admin", rails_admin_path %></li>
-              <% end %>
-              <% else %>
-                <li><%= link_to "Sign-up", new_user_registration_path %></li>
-                <li><%= link_to "Login", new_user_session_path %></li>
+                <% if current_user.admin %>
+                  <li><%= link_to "Admin", rails_admin_path %></li>
+                <% end %>
               <% end %>
             </ul><br>
          </div>
@@ -38,5 +35,19 @@
         </div>
         <%= yield %>
       </div>
+
+      <div class="row">
+        <div class="col s12">
+          <footer class="footer">
+            <div class="footer-copyright">
+              <div class="container left grey-text text-lighten-1">
+                <p><%= link_to "Login", new_user_session_path %></p>
+                <p>© 2017 Copyright Caitlin Ashtari</p>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+
     </body>
   </html>

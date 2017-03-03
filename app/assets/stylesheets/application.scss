@@ -1,4 +1,60 @@
 @import "materialize/components/color";
-$primary-color: color("blue", "lighten-2") !default;
-$secondary-color: color("yellow", "base") !default;
+// $primary-color: color("blue", "lighten-2") !default;
+// $secondary-color: color("yellow", "base") !default;
 @import 'materialize';
+@import url('https://fonts.googleapis.com/css?family=Raleway|Rock+Salt');
+
+// colors
+$white: #fff;
+$instaWhite: rgb(250, 250, 250);
+$instaOff: rgb(255, 255, 255);
+$black: #000;
+$teal: rgb(124, 205, 215);
+
+// fonts
+$rock: 'Rock Salt', cursive;
+$raleway: 'Raleway', sans-serif;
+$typewriter: 'American Typewriter';
+
+// body
+
+body {
+  color: $black;
+  font-family: $raleway;
+  background-color: $instaWhite;
+}
+
+// navbar
+nav{
+  background: $instaWhite;
+  border: 0px;
+  box-shadow: none;
+}
+
+a.brand-logo {
+  font-size: 3em;
+  font-family: $typewriter;
+  height: 1.06em;
+  transition: all .5s;
+  text-decoration: none;
+  color: $black;
+  text-align: center;
+  &:visited, &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    color: $teal;
+  }
+}
+
+// footer
+footer.footer {
+  text-align: center;
+  position: fixed;
+  margin-top: 80px;
+  bottom:0px;
+  margin-bottom:0px;
+  a {
+    color: gray;
+  }
+}
