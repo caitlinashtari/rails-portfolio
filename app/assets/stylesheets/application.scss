@@ -29,6 +29,11 @@ nav{
   background: $instaWhite;
   border: 0px;
   box-shadow: none;
+  .nav-wrapper {
+    li a {
+    color: $teal;
+    }
+  }
 }
 
 a.brand-logo {
