@@ -1,0 +1,19 @@
+<div class="row">
+  <h1 class="brand-logo left">Projects</h1><br>
+</div>
+
+
+  <% @repos.each do |repo| %>
+  <div class="row">
+    <div class="col s12 m4 center">
+    <div class="card">
+      <div class="card-content">
+        <h5><%= repo["name"] %></h5>
+        <p>Language: <%= repo["language"] %></p>
+        <p><%= repo["description"] %></p>
+        <p><%= link_to "Github", repo["url"]%></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
