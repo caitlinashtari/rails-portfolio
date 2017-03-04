@@ -11,7 +11,7 @@
         <h5><%= repo["name"] %></h5>
         <p>Language: <%= repo["language"] %></p>
         <p><%= repo["description"] %></p>
-        <p><%= link_to "Github", repo["url"]%></p>
+        <p><%= link_to "Github", "https://github.com/caitlinashtari/#{repo["name"]}", :target => "_blank"%></p>
       </div>
     </div>
   </div>

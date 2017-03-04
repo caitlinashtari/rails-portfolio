@@ -23,22 +23,21 @@
         <%= yield %>
       </div>
 
-      <div class="row footer-row">
-        <%= link_to "Home", root_path %>
+      <div class="row footer-row center">
         <div class="col s12">
           <footer class="footer">
-            <div class="footer-copyright">
-              <div class="container left grey-text text-lighten-1">
-                <p><%= link_to "Login", new_user_session_path %></p>
+              <div class="container grey-text text-lighten-1">
+                <%= link_to "Home", root_path %> |
                 <% if user_signed_in? %>
-                  <p><%= link_to 'Edit Profile', edit_user_registration_path %></p>
-                  <p><%= link_to 'Logout', destroy_user_session_path, method: :delete %></p>
+                  <%= link_to 'Edit Profile', edit_user_registration_path %> |
+                  <%= link_to 'Logout', destroy_user_session_path, method: :delete %> |
                   <% if current_user.admin %>
-                    <p><%= link_to "Admin", rails_admin_path %></p>
+                    <%= link_to "Admin", rails_admin_path %>
                   <% end %>
+                  <% else %>
+                  <%= link_to "Login", new_user_session_path %>
                 <% end %>
                 <p>© 2017 Copyright Caitlin Ashtari</p>
-              </div>
             </div>
           </footer>
         </div>

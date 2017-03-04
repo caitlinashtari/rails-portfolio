@@ -7,6 +7,6 @@ describe 'sign in process for users', :vcr => true do
     fill_in "Email", :with => "test@test.com"
     fill_in "Password", :with => "123456"
     click_button "Log in"
-    expect(page).to have_content("Admin")
+    expect(page).to have_content("Signed in successfully")
   end
 end

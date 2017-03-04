@@ -1,9 +1,7 @@
 <%= link_to about_index_path do %>
   <div class="row">
     <div class="col s6">
-      <div class="row">
         <h1 class="brand-logo left">Caitlin Ashtari</h1><br>
-      </div>
     </div>
     <div class="col s6">
       <%= image_tag "caitlin.jpg", id: "caitlin" %>
@@ -12,21 +10,23 @@
 <% end %>
 
 <%= link_to projects_path do %>
-<div class="row">
-  <div class="col s6 ">
-    <%= image_tag "flower.jpg", id: "flower" %>
+  <div class="row">
+    <div class="col s6 ">
+      <%= image_tag "flower.jpg", id: "flower" %>
+    </div>
+    <div class="col s6">
+      <h1 class="left brand-logo">Projects</h1>
+    </div>
   </div>
-  <div class="col s6">
-    <h1 class="left brand-logo">Projects</h1>
-  </div>
-</div>
 <% end %>
 
-<div class="row">
-  <div class="col s6 ">
-    <h1 class="left brand-logo">Contact</h1>
+<%= link_to contact_index_path do %>
+  <div class="row">
+    <div class="col s6 ">
+      <h1 class="left brand-logo">Contact</h1>
+    </div>
+    <div class="col s6">
+      <%= image_tag "wire.jpg", id: "wire" %>
+    </div>
   </div>
-  <div class="col s6">
-    <%= image_tag "wire.jpg", id: "wire" %>
-  </div>
-</div>
+<% end %>

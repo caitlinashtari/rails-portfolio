@@ -6,12 +6,12 @@
         null,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         null,
         null
       ],
@@ -84,7 +84,7 @@
         1,
         1,
         1,
-        2,
+        1,
         null
       ],
       "/Users/Guest/Desktop/portfolio/config/environment.rb": [
@@ -619,6 +619,9 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
         null
       ],
       "/Users/Guest/Desktop/portfolio/app/models/user.rb": [
@@ -655,12 +658,31 @@
         null,
         null
       ],
+      "/Users/Guest/Desktop/portfolio/app/controllers/about_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/portfolio/app/controllers/contact_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/Guest/Desktop/portfolio/app/controllers/home_controller.rb": [
         1,
         null,
         1,
+        null,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/portfolio/app/controllers/projects_controller.rb": [
         1,
         1,
+        0,
+        0,
         null,
         null
       ],
@@ -678,8 +700,8 @@
         1,
         null,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -691,10 +713,18 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/portfolio/spec/models/user_spec.rb": [
+      "/Users/Guest/Desktop/portfolio/spec/models/get_github_spec.rb": [
+        1,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
         null
       ]
     },
-    "timestamp": 1488576666
+    "timestamp": 1488587739
   }
 }
