@@ -1,24 +1,45 @@
-# README
+# _Caitlin Ashtari Rails Portfolio_
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### By _**Caitlin Ashtari**, 3/4/2017_
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+This project is a redesign of caitlinashtari.com using Ruby on Rails. It returns projects using the Github API and uses Devise and RailsAdmin for admin authentication.
 
-* System dependencies
+## Prerequisites
 
-* Configuration
+You will need the following things properly installed on your computer.
 
-* Database creation
+* Ruby
+* Rails
+* Postgres
 
-* Database initialization
+## Installation
 
-* How to run the test suite
+* `git clone https://github.com/caitlinashtari/rails-portfolio`
+* `cd rails-portfolio`
+* `bundle`
+* `rails db:create`
+* `rails db:migrate db:test:prepare db:setup`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Login to Admin Account
 
-* Deployment instructions
+In order to view the admin path/dashboard, the seeded admin must be logged in. Visit the footer of the page to login:
 
-* ...
+* `username: test@test.com`
+* `password: password`
+
+## Running
+
+* `rails serve`
+* Visit your app at [http://localhost:3000](http://localhost:3000).
+
+## Technologies Used
+
+_Rails, Ruby, ActiveRecord, Postgres, Devise, RailsAdmin, MaterializeCSS_
+
+### License
+
+*MIT License*
+
+Copyright (c) 2017 **_Caitlin Ashtari_**
